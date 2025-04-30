@@ -149,12 +149,7 @@ main .item_main_structure .item_row_2 {
 
 main .item_main_structure .item_row_2 img {
     border: 1px solid black;
-    /* max-height: 25vh; */
-    /* width: 80%; */
     height: 25vh;
-    /* width: 80%;
-    height: auto; */
-    margin: 1rem auto;
 }
 
 main .item_main_structure .item_row_3 {
