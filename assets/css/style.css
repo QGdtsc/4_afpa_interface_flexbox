@@ -110,7 +110,7 @@ main {
 
 main .item_main_structure {
     margin: 1rem 1rem;
-    border: 2px solid peru;
+    /* border: 2px solid peru; */
     /* background-color: #747274; */
     background-color: #7C90A0;
     /* background-color: blanchedalmond; */
@@ -151,7 +151,7 @@ main .item_main_structure .item_row_2 img {
     border: 1px solid black;
     /* max-height: 25vh; */
     /* width: 80%; */
-    height: 20vh;
+    height: 25vh;
     /* width: 80%;
     height: auto; */
     margin: 1rem auto;
