@@ -1,10 +1,13 @@
 /* importer la police d'ecriture depuis google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Lien de la palette de couleurs */
+/* https://coolors.co/4e5166-7c90a0-faebd7-747274-9b7e46 */
+
 
 body {
     /* border: 1px solid blueviolet; */
-    /* background-color: azure; */
+    background-color: #FAEBD7;
     /* police d'écriture de google fonts */
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -25,27 +28,28 @@ body {
 header {
     /* border: 1px solid black; */
     border-bottom: 1px solid peru;
-    background-color: antiquewhite;
+    background-color: #FAEBD7;
     height: 25vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 }
 
 header h1 {
-    /* font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal; */
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
     /* color: lightcoral; */
-    color: chocolate;
+    color: #4E5166;
+    /* color: chocolate; */
     text-transform: uppercase;
-    font-size: 3rem;
-    margin: auto auto;
+    font-size: 4.5rem;
+    margin: 0 0;
+    /* width: 35%; */
+    margin-left: 3rem;
 }
 
 header img {
@@ -54,16 +58,20 @@ header img {
 
 .navbar {
     /* border: 1px solid green; */
-    background-color: lightgray;
+    /* background-color: #7C90A0; */
+    background-color: #4E5166;
+    /* background-color: lightgray; */
     border-bottom: 3px solid peru;
     /* border-bottom: 3px solid black; */
     height: 10vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    /* justify-content: space-around; */
     align-items: center;
 }
 
+/* Suppression car les boutons de la navbar ont été supprimés
 .navbar button {
     border: 1px solid peru;
     padding: 1.5rem 1.5rem;
@@ -73,6 +81,21 @@ header img {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
+} */
+.navbar p {
+    padding: 1.5rem 1.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 0;
+    color:#FAEBD7 ;
+}
+
+.navbar .dash {
+    font-weight: bold;
+    margin: 0 0;
 }
 
 main {
@@ -82,15 +105,16 @@ main {
     /* justify-content: flex-start; */
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 3rem auto;
 }
-
 
 main .item_main_structure {
     margin: 1rem 1rem;
     border: 2px solid peru;
-    /* background-color: lightgray; */
-    background-color: blanchedalmond;
-    width: 30%;
+    /* background-color: #747274; */
+    background-color: #7C90A0;
+    /* background-color: blanchedalmond; */
+    width: 25%;
     /* width: 33.33%; */
     display: flex;
     flex-direction: column;
@@ -108,8 +132,11 @@ main .item_main_structure .item_row_1 {
 
 main .item_main_structure .item_row_1 p {
     margin-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 1rem;
+    color: #FAEBD7;
+    font-weight: bold;
+    letter-spacing: .05rem;
 }
 
 main .item_main_structure .item_row_2 {
@@ -124,7 +151,7 @@ main .item_main_structure .item_row_2 img {
     border: 1px solid black;
     /* max-height: 25vh; */
     /* width: 80%; */
-    height: 25vh;
+    height: 20vh;
     /* width: 80%;
     height: auto; */
     margin: 1rem auto;
@@ -140,6 +167,10 @@ main .item_main_structure .item_row_3 {
 
 main .item_main_structure .item_row_3 p {
     margin-left: 1rem;
+    font-size: 1.2rem;
+    /* color: #FAEBD7; */
+    font-weight: bold;
+    letter-spacing: .05rem;
 }
 
 main .item_main_structure .item_row_4 {
@@ -157,10 +188,15 @@ main .item_main_structure .item_row_4 p {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-weight: bold;
 }
 
-main .item_main_structure .item_row_4 span {
+/* Supprimé car j'ai supprimé les icones google fonts */
+/* main .item_main_structure .item_row_4 span {
     font-size: 1.8rem;
+} */
+main .item_main_structure .item_row_4 i {
+    font-size: 1.2rem;
 }
 
 main .item_main_structure .item_row_5 {
@@ -172,34 +208,57 @@ main .item_main_structure .item_row_5 {
 }
 
 main .item_main_structure .item_row_5 button {
+    width: 50%;
+    background-color: darkred;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: .05rem;
+    color: #FAEBD7;
+}
+/* main .item_main_structure .item_row_5 button {
     margin: 1rem 1rem;
     border: 1px solid black;
     background-color: lightgrey;
     background-color: darkred;
-    color: beige;
     font-size: 1.1rem;
-    width: 33%;
+    width: 50%;
     padding: 1rem 1rem;
-}
+    letter-spacing: .05rem;
+    color: #FAEBD7;
+    font-weight: bold;
+} */
 
 main .item_main_structure .item_row_5 p {
     margin: 1rem 1rem;
     border: 1px solid black;
-    background-color: darkgoldenrod;
-    font-size: 1.1rem;
-    width: 33%;
+    background-color: #9B7E46;
+    /* background-color: darkgoldenrod; */
+    font-size: 1.2rem;
+    width: 25%;
     padding: 1rem 1rem;
-
+    display: flex;
+    justify-content: center;
+    letter-spacing: .08rem;
+    color: #FAEBD7;
+    font-weight: bold;
 }
 
 footer {
-    border-top: 1px solid peru;
+    /* border-top: 1px solid peru; */
+    border-top: 3px solid peru;
     background-color: antiquewhite;
+    background-color: #4E5166;
     margin-top: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+footer p {
+    color: #FAEBD7;
 }
 
 footer .footer_columns_top {
@@ -220,6 +279,7 @@ footer .footer_columns_top .footer_div_map iframe {
     width: 100%;
     height: 20vh;
     margin: 1rem 1rem;
+    border: 1px solid peru;
 }
 
 footer .footer_columns_top .footer_div_adress {
