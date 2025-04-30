@@ -1,9 +1,10 @@
 /* importer la police d'ecriture depuis google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body {
-    border: 1px solid blueviolet;
-    background-color: azure;
+    /* border: 1px solid blueviolet; */
+    /* background-color: azure; */
     /* police d'écriture de google fonts */
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -14,7 +15,7 @@ body {
 }
 
 .structure_body_flexbox {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,7 +23,8 @@ body {
 }
 
 header {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-bottom: 1px solid peru;
     background-color: antiquewhite;
     height: 25vh;
     width: 100%;
@@ -32,9 +34,29 @@ header {
     align-items: center;
 }
 
+header h1 {
+    /* font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    /* color: lightcoral; */
+    color: chocolate;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: auto auto;
+}
+
+header img {
+    height: 15vh;
+}
+
 .navbar {
-    border: 1px solid green;
-    background-color: aquamarine;
+    /* border: 1px solid green; */
+    background-color: lightgray;
+    border-bottom: 3px solid peru;
+    /* border-bottom: 3px solid black; */
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -43,30 +65,32 @@ header {
 }
 
 .navbar button {
-    border: 1px solid purple;
+    border: 1px solid peru;
     padding: 1.5rem 1.5rem;
     width: 25vw;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 main {
-    border: 1px solid peru;
+    /* border: 1px solid peru; */
     /* height: 75vh; */
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-main .item_main {
-    width: 33.33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-
-main .item_main_structure{
-    border: 1px solid red;
-    width: 33%;
+main .item_main_structure {
+    margin: 1rem 1rem;
+    border: 2px solid peru;
+    /* background-color: lightgray; */
+    background-color: blanchedalmond;
+    width: 30%;
     /* width: 33.33%; */
     display: flex;
     flex-direction: column;
@@ -81,9 +105,13 @@ main .item_main_structure .item_row_1 {
     align-items: center;
     /* justify-content: flex-end; */
 }
+
 main .item_main_structure .item_row_1 p {
     margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
+
 main .item_main_structure .item_row_2 {
     /* border: 1px dashed blue; */
     display: flex;
@@ -91,13 +119,16 @@ main .item_main_structure .item_row_2 {
     justify-content: center;
     align-items: center;
 }
-main .item_main_structure .item_row_2 img{
+
+main .item_main_structure .item_row_2 img {
     border: 1px solid black;
-    width: 80%;
-    height: auto;
+    /* max-height: 25vh; */
+    /* width: 80%; */
+    height: 25vh;
+    /* width: 80%;
+    height: auto; */
     margin: 1rem auto;
 }
-
 
 main .item_main_structure .item_row_3 {
     /* border: 1px dashed blue; */
@@ -106,10 +137,10 @@ main .item_main_structure .item_row_3 {
     justify-content: flex-start;
     align-items: center;
 }
+
 main .item_main_structure .item_row_3 p {
     margin-left: 1rem;
 }
-
 
 main .item_main_structure .item_row_4 {
     /* border: 1px dashed blue; */
@@ -118,6 +149,7 @@ main .item_main_structure .item_row_4 {
     justify-content: flex-start;
     align-items: center;
 }
+
 main .item_main_structure .item_row_4 p {
     margin-top: auto;
     margin-bottom: auto;
@@ -126,6 +158,7 @@ main .item_main_structure .item_row_4 p {
     flex-direction: row;
     align-items: center;
 }
+
 main .item_main_structure .item_row_4 span {
     font-size: 1.8rem;
 }
@@ -137,62 +170,30 @@ main .item_main_structure .item_row_5 {
     justify-content: space-between;
     align-items: center;
 }
+
 main .item_main_structure .item_row_5 button {
     margin: 1rem 1rem;
     border: 1px solid black;
     background-color: lightgrey;
+    background-color: darkred;
+    color: beige;
+    font-size: 1.1rem;
     width: 33%;
     padding: 1rem 1rem;
 }
+
 main .item_main_structure .item_row_5 p {
     margin: 1rem 1rem;
     border: 1px solid black;
     background-color: darkgoldenrod;
+    font-size: 1.1rem;
     width: 33%;
     padding: 1rem 1rem;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
-    border: 1px solid black;
+    border-top: 1px solid peru;
     background-color: antiquewhite;
     margin-top: auto;
     width: 100%;
@@ -214,13 +215,14 @@ footer .footer_columns_top .footer_div_map {
     justify-content: center;
     align-items: center;
 }
+
 footer .footer_columns_top .footer_div_map iframe {
     width: 100%;
     height: 20vh;
     margin: 1rem 1rem;
 }
 
-footer .footer_columns_top .footer_div_adress{
+footer .footer_columns_top .footer_div_adress {
     margin: 2rem 5rem;
     display: flex;
     flex-direction: column;
